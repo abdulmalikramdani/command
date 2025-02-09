@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        @keyframes rotate{
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        #container {
+            width: 90%;
+            /* height: 500px; */
+            background-color: rgb(20, 24, 20);
+            margin: auto;
+            display: flex;  
+            flex-wrap: wrap;  
+            flex-direction: row; 
+            gap: 15px;    
+            /* justify-content: center; */
+            align-items: center;
+        }
+        #container div {
+            width: 70px;
+            height: 70px;
+           display: flex;
+           flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: aliceblue;
+           
+             
+        }
+        #container div:hover {
+            
+            color: sandybrown;
+            cursor: pointer;
+            border-radius: 20%;
+            animation: rotate 2s;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>BOX</h1>
+    <section id="container">
+        <div style="background-color: aqua;">1</div>
+        <div style="background-color: salmon;">2</div>
+        <div style="background-color: blueviolet;">3</div>
+        <div style="background-color: rgb(64, 226, 43);">4</div>
+        <div style="background-color: rgb(226, 43, 156);">5</div>
+    </section>
+</body>
+</html>

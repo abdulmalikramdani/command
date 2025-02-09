@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Command</title>
+    <style>
+        input[type="text"] {
+            width: 30rem;
+            color: aqua;
+            height: fit-content;
+            
+        }
+        button {
+            background-color: #4CAF50;
+            border-radius: 50px;
+            border: none;
+            padding: 10px;
+            margin: auto;
+            
+
+        }
+        button:hover{
+            background-color: #3e8e41;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        input,select,textarea{
+            width: 100px;
+            field-sizing: content;
+            
+        }
+    </style>
 </head>
 <body>
     <h1>halaman contact</h1>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <td>Search : </td>
+            <td><input type="text" placeholder="Search..." value=""></td>
+            <td><button type="submit">search</button></td>
+        </tr>
+        <tr>
+            <td>Comentar</td>
+            <td><textarea placeholder="write this content .."></textarea></td>
+        </tr>
+        <tr>
+            <td>Olahraga : </td>
+            <td>
+                <select name="" id="">
+                    <option value="" >Pilih Opsi</option>
+                    <option value="">Pingpong</option>
+                    <option value="">Sepak Bola</option>
+                    <option value="">Petak Umpet</option>
+                    <option value="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi maxime reiciendis impedit consequatur molestiae in nesciunt dolores. Officiis excepturi, blanditiis odit, distinctio est, iure sunt repudiandae corrupti qui sit perferendis.</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details name = "ekskul">
+                    <summary>Olahraga</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nemo, culpa placeat velit maxime, tenetur aliquid excepturi voluptatem quod ipsa hic distinctio numquam reprehenderit? Est autem ut excepturi obcaecati voluptate.</p>
+                    <a href="">sport.id</a>
+                </details>
+                <details  name = "ekskul">
+                    <summary>Pramuka</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nemo, culpa placeat velit maxime, tenetur aliquid excepturi voluptatem quod ipsa hic distinctio numquam reprehenderit? Est autem ut excepturi obcaecati voluptate.</p>
+                    <a href="">sport.id</a>
+                </details>
+                <details  name = "ekskul">
+                    <summary>Mapala</summary>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia nemo, culpa placeat velit maxime, tenetur aliquid excepturi voluptatem quod ipsa hic distinctio numquam reprehenderit? Est autem ut excepturi obcaecati voluptate.</p>
+                    <a href="">sport.id</a>
+                </details>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
